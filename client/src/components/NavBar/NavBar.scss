@@ -1,0 +1,135 @@
+@import "../../responsive.scss";
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+
+    a{
+        transition: all 0.4s ease;
+        &:hover{
+            scale: 1.05;
+        }
+        @include sm{
+            display: none;
+        }
+    }
+    .left{
+        width: 60%;
+    
+        display: flex;
+        align-items: center;
+         gap:50px;
+
+        .logo{
+           
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            font-weight: 800;
+            font-size: 20px;
+            img{
+               
+                width: 25px;
+            }
+            span{
+                @include md{
+                    display: none;
+                }
+                @include sm{
+                    display: initial;
+                }
+            }
+        }
+    }
+    .right{
+        width: 40%;
+        display: flex;
+        justify-content: end;
+        background-color: #fcf5f3;
+        height: 100%;
+        align-items: center;
+        .authUser{
+          
+            display: flex;
+            gap: 30px;
+            p{
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                span{
+                    font-weight: bold;
+                }
+                img{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+            a{
+                position: relative;
+                background-color: #fece51;
+                padding: 0px 30px;
+                font-weight: 600;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span{
+                    position: absolute;
+                    top: -10px;
+                    right: -10px;
+                    padding: 3px 8px;
+                    background-color: red;
+                    color: white;
+                    border-radius: 50%
+                }
+            }
+        }
+        @include md{
+            background-color: transparent;
+        }
+        .register{
+            background-color: #fece51;
+            padding: 12px 25px;
+            margin: 20px;
+            font-weight: 700;
+        }
+        .menuIcon{
+            display: none;
+            z-index: 2;
+            @include sm{
+                display: initial;
+            }
+            cursor: pointer;
+            img{
+                width: 35px;
+            }
+        }
+        .menu{
+                transition: all 0.4s ease-in-out;
+                height: 100vh;
+                background-color: black;
+                color: white ;
+                position: absolute;
+                top: 0;
+                right: -50%;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                font-weight: 800;
+                &.active{
+                    right: 0;
+                }
+                @include sm{
+                    a{
+                        display: initial;
+                    }
+                }
+        
+        }
+        
+    }
+}

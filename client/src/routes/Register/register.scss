@@ -1,0 +1,46 @@
+.register{
+    display: flex;
+    height: 100%;
+    .left{
+        width: 60%;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        form{
+
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h3{
+                font-size: 25px;
+            }
+            input{
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid rgba(128, 128, 128, 0.63);
+            }
+            button{
+                background-color: green;
+                padding: 10px;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 15px;
+            }
+            a{
+                text-decoration: underline;
+                color: grey;
+            }
+        }
+    }
+    .right{
+        width: 40%;
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

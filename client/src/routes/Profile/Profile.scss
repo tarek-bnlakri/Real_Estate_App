@@ -1,0 +1,209 @@
+.profile{
+    display: flex;
+    height: 100%;
+    .left{
+       
+        width: 60%;
+        .wrapper{
+            padding-right: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            padding-bottom: 20px;
+            overflow-y: auto;
+            height: 100%;
+            .head{
+                display: flex;
+                justify-content: space-between;
+                h1{
+                    font-weight: 300;
+                }
+                button{
+                    background-color:rgba(240, 187, 15, 0.774);
+                    border: none;
+                    padding: 5px 20px;
+                }
+
+            }
+            .top,.down{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                
+                .body{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    p{
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        img{
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+
+                        .bold{
+                            font-weight: bold;
+                            
+                        }
+                    }
+                    button{
+                        width: 100px;
+                        padding:10px 20px;
+                        background-color: rgba(0, 128, 0, 0.651);
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .down{
+                
+                .cardContatiner{
+                   display: flex;
+                   flex-direction: column;
+                   gap: 30px;
+                    
+                }
+            }
+        }
+       
+    }
+    .right{
+        width: 40%;
+        height: 100%;
+        background-color: #fcf5f3;
+        .wrapper{
+            height: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            .top{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                overflow-y: auto;
+                
+                
+                h1{
+                    font-weight: 300;
+                }
+                .container{
+                   display: flex;
+                   flex-direction: column;
+                   gap: 20px; 
+                   .message{
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    background-color: white;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                   }
+                }
+            }
+            .down{
+               
+                .chatcontainee{
+                    &.disable{
+                        display: none;
+                    }
+                    .head{
+                        background-color: rgba(240, 187, 15, 0.493);
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 10px;
+                        span:last-child{
+                            font-weight: 900;
+                            cursor: pointer;
+                        }
+                        .userInfo{
+                           
+                            display: flex;
+                            gap: 10px;
+                            align-items: center;
+                           
+                            img{
+                                height: 50px;
+                                width: 50px;
+                                border-radius: 50%;
+                                object-fit: cover;
+                            }
+                        }
+                       
+                    }
+                    .body{
+                            background-color: white;
+                            overflow-y: auto;
+                            height: 300px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+                            padding: 20px;
+                            .usermessage{
+                                width: 50%;
+                                display: flex;
+                                flex-direction: column;
+                               
+                               span{
+                                width: max-content;
+                               }
+                                gap: 6px;
+                                &.own{
+                                    p{
+                                        background-color: rgba(27, 30, 214, 0.664);
+                                        color: white;
+                                        border-radius: 10px;
+                                        text-align: left;
+                                        padding: 7px;
+                                    }
+                                    
+                                    align-self: flex-end;
+                                    text-align: right;
+                                   span{
+                                    color: black;
+                                    align-self: flex-end;
+                                }
+                                }
+                                span{
+                                  
+                                    background-color: bisque;
+                                    padding: 4px;
+                                    font-size: 12px;
+                                    border-radius: 5px;
+                                }
+                            }
+                            
+
+                    }
+                    .inputContainer{
+                       display: flex;
+                       textarea{
+                        padding: 10px;
+                        width: 100%;
+                       } 
+                       button{
+                        background-color: rgba(240, 187, 15, 0.466);;
+                        padding: 20px;
+                        border: none;
+                        cursor: pointer;
+                       }
+                    }
+                }
+            }
+        }
+        
+    }
+
+}

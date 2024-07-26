@@ -1,0 +1,78 @@
+.imageContainer{
+    display: flex;
+     gap: 20px;
+     width: 100%;
+     height: 350px;
+     .slider{
+        transition: all 0.5s ease-in-out;
+        z-index: 10001;
+        position: absolute;
+        top: 0px;
+        transform: scale(0);
+       &.active{
+        transform: scale(1);
+       }
+        padding: 10px 50px;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        .exit{
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            color: white;
+            font-size: 50px;
+            font-weight: 900;
+            cursor: pointer;
+        }
+        .image{
+        
+            img{
+                height: 100%;
+                width: 100%;
+                border-radius: 20px; object-fit: cover;
+            }
+           
+        }
+        .arrow{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 50px;
+            }
+            &.right{
+                transform: rotate(180deg);
+                
+            }
+        }
+     }
+img{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.mainImage{
+    width: 70%;
+    
+    
+}
+.secondaryImages{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+  
+    img{
+        width: 100%;
+        height: 100px;
+    }
+}
+}
